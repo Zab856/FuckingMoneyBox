@@ -1,0 +1,169 @@
+/* General stuff */ /* General stuff */ /* General stuff */
+:root {
+  --clr--night: rgb(20, 20, 20);
+  --clr-aliceBlue: rgb(244, 250, 255);
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman';
+  margin: 0;
+  padding: 0;
+  /* top left-right bottom */ /* top right bottom left */
+}
+html {font-size: 62.5%;} /* 1rem = 10px */
+body {
+  font-size: 1.6rem; /* torna come prima ma uso rem in base 10 */
+}
+/* Body */ /* Body */ /* Body */ /* Body */ /* Body */ /* Body */ /* Body */ /* Body */ /* Body */
+body {
+  background-color: var(--clr--night);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+/* header */ /* header */ /* header */ /* header */ 
+.header {
+  color: var(--clr-aliceBlue);
+  font-size: 5rem;
+  border: 2px solid var(--clr-aliceBlue);
+  border-radius: 2rem;
+  padding: .5em;
+}
+/* main */ /* main */ /* main */ /* main */ /* main */
+.main {
+  color: var(--clr-aliceBlue);
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: .5rem;
+  row-gap: .5rem;
+
+  border: 2px solid var(--clr-aliceBlue);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+.coin {
+  display: flex;
+  align-items: end;
+}
+.coin-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--clr--night);
+  /* border: 2px solid var(--clr-aliceBlue); */
+  color: var(--clr-aliceBlue);
+}
+/* venti */
+.venti {
+  height: 84.09px;
+  width: 84.09px;
+  border-radius: 42.05px;
+}
+.venti h2 {
+  font-size: 3rem;
+}
+.venti .euro-icon {
+  font-size: 2.8rem;
+}
+/* dieci */
+.dieci {
+  height: 74.64px;
+  width: 74.64px;
+  border-radius: 37.32px;
+}
+.dieci h2 {
+  font-size: 2.8rem;
+}
+.dieci .euro-icon {
+  font-size: 2.6rem;
+}
+/* cinque */
+.cinque {
+  height: 80.31px;
+  width: 80.31px;
+  border-radius: 40.16px;
+}
+.cinque h2 {
+  font-size: 2.6rem;
+}
+.cinque .euro-icon {
+  font-size: 2.4rem;
+}
+/* due */
+.due {
+  height: 70.86px;
+  width: 70.86px;
+  border-radius: 35.43px;
+}
+.due h2 {
+  font-size: 2.2rem;
+}
+.due .euro-icon {
+  font-size: 2rem;
+}
+/* uno */
+.uno {
+  height: 61.41px;
+  width: 61.41px;
+  border-radius: 30.71px;
+}
+.uno h2 {
+  font-size: 1.9rem;
+}
+.uno .euro-icon {
+  font-size: 1.8rem;
+}
+
+/* remove button */ /* remove button */
+.remove-btn {
+  background-color: var(--clr--night);
+  border-radius: 2rem;
+  padding: 0 1px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.remove-icon {
+  color: var(--clr-aliceBlue);
+}
+
+/* argh */ /* argh */ /* argh */ /* argh */ /* argh */
+.argh {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+/* total */ /* total */ /* total */ /* total */ /* total */ 
+.total {
+  color: var(--clr-aliceBlue);
+  border: 2px solid var(--clr-aliceBlue);
+  border-radius: 1rem;
+
+  font-size: 2rem;
+  padding: .5em;
+
+  display: flex;
+  /* justify-content: space-between; */
+  column-gap: .5rem;
+  align-items: center;
+}
+
+/* reset */ /* reset */ /* reset */ /* reset */ /* reset */ 
+.reset {
+  background-color: var(--clr--night);
+  border-radius: 2rem;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reset-icon {
+  color: var(--clr-aliceBlue);
+}
