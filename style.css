@@ -25,7 +25,7 @@ body {
   flex-direction: column;
 }
 /* header */ /* header */ /* header */ /* header */ 
-.header {
+header {
   color: var(--clr-aliceBlue);
   font-size: 5rem;
   border: 2px solid var(--clr-aliceBlue);
@@ -33,7 +33,7 @@ body {
   padding: .5em;
 }
 /* main */ /* main */ /* main */ /* main */ /* main */
-.main {
+main {
   color: var(--clr-aliceBlue);
 
   display: grid;
@@ -133,14 +133,8 @@ body {
   color: var(--clr-aliceBlue);
 }
 
-/* argh */ /* argh */ /* argh */ /* argh */ /* argh */
-.argh {
-  display: flex;
-  align-items: center;
-  column-gap: .5rem;
-}
-/* total */ /* total */ /* total */ /* total */ /* total */ 
-.total {
+/* footer */ /* footer */ /* footer */ /* footer */ /* footer */ 
+footer {
   color: var(--clr-aliceBlue);
   border: 2px solid var(--clr-aliceBlue);
   border-radius: 1rem;
@@ -149,9 +143,14 @@ body {
   padding: .5em;
 
   display: flex;
-  /* justify-content: space-between; */
-  column-gap: .5rem;
   align-items: center;
+  column-gap: .5rem;
+}
+.total-amount {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  color: var(--clr-aliceBlue);
 }
 
 /* reset */ /* reset */ /* reset */ /* reset */ /* reset */ 
@@ -166,4 +165,82 @@ body {
 }
 .reset-icon {
   color: var(--clr-aliceBlue);
+}
+
+
+/* === Media Queries === */
+
+/* Tablet e laptop piccoli */
+@media (max-width: 1024px) {
+  body {
+    transform: scale(0.9);
+  }
+}
+
+/* Smartphone grandi */
+@media (max-width: 768px) {
+  body {
+    transform: scale(0.8);
+  }
+}
+
+/* Smartphone piccoli */
+@media (max-width: 700px) {
+  body {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+  }
+  header {
+    font-size: 2.2rem;
+    border: none;
+    border-radius: 0;
+  }
+  header h1 {
+    font-size: 4.5rem;
+  }
+  main {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    border: none;
+    padding: 0 1rem;
+  }
+  .coin {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 1.5rem 0;
+
+    flex-direction: column;
+    align-items: center;
+  }
+  .coin-btn {
+    transform: scale(1.4);
+    padding: 1.5rem;
+  }
+  .coin-btn h2 {
+    font-size: 2.8rem;
+  }
+  .euro-icon {
+    font-size: 2.8rem;
+  }
+  .remove-div {
+    margin-top: 1rem;
+  }
+  .remove-btn {
+    transform: scale(1.3);
+  }
+  footer {
+    font-size: 2.2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    border-radius: 0;
+  }
+  .total-amount {
+    flex-direction: row;
+    justify-content: center; 
+  }
 }
