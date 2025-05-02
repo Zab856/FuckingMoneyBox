@@ -14,67 +14,70 @@
   </head>
   <body>
 
-    <div class="header">
+    <header>
+
       <h1>FuckingMoneyBox</h1>
-    </div>
-    <div class="main">
+
+    </header>
+
+    <main>
 
       <div class="coin">
-        <button class="coin-btn venti" onclick="Add(0.2)">
+        <button class="coin-btn venti" data-value="0.2">
           <h2>0.2</h2>
           <span class="material-symbols-outlined euro-icon">euro</span>
         </button>
         <div class="remove-div">
-          <button class="remove-btn" onclick="Subtract(0.2)"><span class="material-symbols-outlined remove-icon">remove</span></button>
+          <button class="remove-btn" data-value="0.2"><span class="material-symbols-outlined remove-icon">remove</span></button>
         </div>
       </div>
       <div class="coin">
-        <button class="coin-btn dieci" onclick="Add(0.1)">
+        <button class="coin-btn dieci" data-value="0.1">
           <h2>0.1</h2>
           <span class="material-symbols-outlined euro-icon">euro</span>
         </button>
         <div class="remove-div">
-          <button class="remove-btn" onclick="Subtract(0.1)"><span class="material-symbols-outlined remove-icon">remove</span></button>
+          <button class="remove-btn" data-value="0.1"><span class="material-symbols-outlined remove-icon">remove</span></button>
         </div>
       </div>
       <div class="coin">
-        <button class="coin-btn cinque" onclick="Add(0.05)">
+        <button class="coin-btn cinque" data-value="0.05">
           <h2>0.05</h2>
           <span class="material-symbols-outlined euro-icon">euro</span>
         </button>
         <div class="remove-div">
-          <button class="remove-btn" onclick="Subtract(0.05)"><span class="material-symbols-outlined remove-icon">remove</span></button>
+          <button class="remove-btn" data-value="0.05"><span class="material-symbols-outlined remove-icon">remove</span></button>
         </div>
       </div>
       <div class="coin">
-        <button class="coin-btn due" onclick="Add(0.02)">
+        <button class="coin-btn due" data-value="0.02">
           <h2>0.02</h2>
           <span class="material-symbols-outlined euro-icon">euro</span>
         </button>
         <div class="remove-div">
-          <button class="remove-btn" onclick="Subtract(0.02)"><span class="material-symbols-outlined remove-icon">remove</span></button>
+          <button class="remove-btn" data-value="0.02"><span class="material-symbols-outlined remove-icon">remove</span></button>
         </div>
       </div>
       <div class="coin">
-        <button class="coin-btn uno" onclick="Add(0.01)">
+        <button class="coin-btn uno" data-value="0.01">
           <h2>0.01</h2>
           <span class="material-symbols-outlined euro-icon">euro</span>
         </button>
         <div class="remove-div">
-          <button class="remove-btn" onclick="Subtract(0.01)"><span class="material-symbols-outlined remove-icon">remove</span></button>
+          <button class="remove-btn" data-value="0.01"><span class="material-symbols-outlined remove-icon">remove</span></button>
         </div>
       </div>
 
-    </div>
-    <div class="argh">
+    </main>
 
-      <div class="total">
+    <footer>
+
+      <div class="total-amount">
         <h2 id="total"></h2>
         <span class="material-symbols-outlined">euro</span>
       </div>
-      <button class="reset" onclick="ResetTotal()"><span class="material-symbols-outlined reset-icon">settings_backup_restore</span></button>
 
-    </div>    
+    </footer>
 
     <!-- links to javascript -->
     <script src="script.js"></script> <!-- general -->
