@@ -2,6 +2,20 @@ console.log("Hi!👽👍");
 
 /* General stuff */ /* General stuff */ /* General stuff */
 
+document.querySelectorAll(".coin-btn").forEach(button => {
+  const numValue = parseFloat(button.getAttribute("data-value"));
+  button.addEventListener("click", () => {
+    Add(numValue);
+  });
+});
+
+document.querySelectorAll(".remove-btn").forEach(button => {
+  const numValue = parseFloat(button.getAttribute("data-value"));
+  button.addEventListener("click", () => {
+    Subtract(numValue);
+  });
+});
+
 let total = 0;
 const savedTotal = localStorage.getItem('total');
 if (savedTotal !== null) {
@@ -23,10 +37,4 @@ function Subtract(num) {
     document.getElementById('total').innerHTML = `Il tuo totale è: ${total.toFixed(2)}`;
     localStorage.setItem('total', total);
   };
-};
-
-function ResetTotal() {
-  total = 0;
-  document.getElementById('total').innerHTML = `Il tuo totale è: ${total.toFixed(2)}`;
-  localStorage.removeItem('total');
 };
