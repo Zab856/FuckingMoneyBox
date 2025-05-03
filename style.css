@@ -37,7 +37,7 @@ main {
   color: var(--clr-aliceBlue);
 
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   column-gap: .5rem;
   row-gap: .5rem;
 
@@ -57,6 +57,18 @@ main {
   background-color: var(--clr--night);
   /* border: 2px solid var(--clr-aliceBlue); */
   color: var(--clr-aliceBlue);
+}
+/* cinquanta */
+.cinquanta {
+  height: 91.65px;
+  width: 91.65px;
+  border-radius: 45.83px;
+}
+.cinquanta h2 {
+  font-size: 3rem;
+}
+.cinquanta .euro-icon {
+  font-size: 2.8rem;
 }
 /* venti */
 .venti {
@@ -168,7 +180,8 @@ footer {
 }
 
 
-/* === Media Queries === */
+
+/* === Media Queries === */ /* io sto lavorando su laptopl 1440px */
 
 /* Tablet e laptop piccoli */
 @media (max-width: 1024px) {
@@ -177,70 +190,38 @@ footer {
   }
 }
 
-/* Smartphone grandi */
+/* Tablet */
 @media (max-width: 768px) {
   body {
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
 }
 
-/* Smartphone piccoli */
-@media (max-width: 700px) {
-  body {
-    display: flex;
-    justify-content: center;
-    font-size: 1.8rem;
-  }
+/* Mobile L */
+@media (max-width: 425px) {
   header {
-    font-size: 2.2rem;
-    border: none;
-    border-radius: 0;
-  }
-  header h1 {
-    font-size: 4.5rem;
+    border: 0;
+    font-size: 3rem;
   }
   main {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-    border: none;
-    padding: 0 1rem;
-  }
-  .coin {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    margin: 1.5rem 0;
-
-    flex-direction: column;
-    align-items: center;
-  }
-  .coin-btn {
-    transform: scale(1.4);
-    padding: 1.5rem;
-  }
-  .coin-btn h2 {
-    font-size: 2.8rem;
-  }
-  .euro-icon {
-    font-size: 2.8rem;
-  }
-  .remove-div {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    row-gap: 3rem;
+    border: 0;
     margin-top: 1rem;
   }
-  .remove-btn {
-    transform: scale(1.3);
+  .coin {
+    transform: scale(1.2);
   }
   footer {
-    font-size: 2.2rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    border: none;
-    border-radius: 0;
+    margin-top: 2rem;
+    border: 0;
   }
-  .total-amount {
-    flex-direction: row;
-    justify-content: center; 
+}
+
+/* Mobile S */
+@media (max-width: 425px) {
+  body {
+    transform: scale(0.6);
   }
 }
