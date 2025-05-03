@@ -29,7 +29,7 @@ header {
   color: var(--clr-aliceBlue);
   font-size: 5rem;
   border: 2px solid var(--clr-aliceBlue);
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   padding: .5em;
 }
 /* main */ /* main */ /* main */ /* main */ /* main */
@@ -42,7 +42,7 @@ main {
   row-gap: .5rem;
 
   border: 2px solid var(--clr-aliceBlue);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   padding: 1.5rem;
 }
 .coin {
@@ -65,10 +65,10 @@ main {
   border-radius: 45.83px;
 }
 .cinquanta h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .cinquanta .euro-icon {
-  font-size: 2.8rem;
+  font-size: 3.25rem;
 }
 /* venti */
 .venti {
@@ -180,7 +180,6 @@ footer {
 }
 
 
-
 /* === Media Queries === */ /* io sto lavorando su laptopl 1440px */
 
 /* Tablet e laptop piccoli */
@@ -199,6 +198,10 @@ footer {
 
 /* Mobile L */
 @media (max-width: 425px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+  }  
   header {
     border: 0;
     font-size: 3rem;
@@ -215,13 +218,34 @@ footer {
   }
   footer {
     margin-top: 2rem;
+    font-size: 2.5rem;
     border: 0;
   }
 }
 
 /* Mobile S */
-@media (max-width: 425px) {
+@media (max-width: 320px) {
   body {
-    transform: scale(0.6);
+    height: auto;
+    min-height: 100vh;
+  }  
+  header {
+    border: 0;
+    font-size: 2.7rem;
+  }
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.5rem;
+    row-gap: 2.8rem;
+    border: 0;
+    margin-top: 1rem;
+  }
+  .coin {
+    transform: scale(1.2);
+  }
+  footer {
+    margin-top: 1.9rem;
+    font-size: 2.2rem;
+    border: 0;
   }
 }
