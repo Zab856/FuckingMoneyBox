@@ -192,9 +192,11 @@ footer button {
   }
   header {
     border: 0;
+    padding-inline: 1rem;
   }
   header h1 {
     font-size: 6rem;
+    text-align: center;
   }
   main {
     grid-template-columns: repeat(2, 1fr);
