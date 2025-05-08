@@ -1,94 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>FuckingMoneyBox</title>
+    <title>MyMoneyBox</title>
     <!-- metas -->
-    <meta charset="UTF-8"> <!-- ` -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marco856">
     <!-- custom icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!-- links to css -->
-    <link rel="stylesheet" href="style.css"> <!-- general -->
-    <!-- custom fonts -->
+    <link rel="stylesheet" href="style.css"> <!-- all -->
   </head>
   <body>
 
     <header>
-
-      <h1>FuckingMoneyBox</h1>
-
+      <h1>MyMoneyBox</h1>
     </header>
 
     <main>
-
-      <div class="coin">
-        <button class="coin-btn cinquanta" data-value="0.5">
+      <div class="coin-slot"> <!-- 0.5 -->
+        <button class="addCoin-btn fifty" data-value="0.5">
           <h2>0.5</h2>
-          <span class="material-symbols-outlined euro-icon">euro</span>
+          <span class="material-symbols-outlined euro">euro</span>
         </button>
-        <div class="remove-div">
-          <button class="remove-btn" data-value="0.5"><span class="material-symbols-outlined remove-icon">remove</span></button>
-        </div>
+        <button class="removeCoin-btn" data-value="0.5">
+          <span class="material-symbols-outlined delete-sweep">delete_sweep</span>
+        </button>
       </div>
-      <div class="coin">
-        <button class="coin-btn venti" data-value="0.2">
+      <div class="coin-slot"> <!-- 0.2 -->
+        <button class="addCoin-btn twenty" data-value="0.2">
           <h2>0.2</h2>
-          <span class="material-symbols-outlined euro-icon">euro</span>
+          <span class="material-symbols-outlined euro">euro</span>
         </button>
-        <div class="remove-div">
-          <button class="remove-btn" data-value="0.2"><span class="material-symbols-outlined remove-icon">remove</span></button>
-        </div>
+        <button class="removeCoin-btn" data-value="0.2">
+          <span class="material-symbols-outlined delete-sweep">delete_sweep</span>
+        </button>
       </div>
-      <div class="coin">
-        <button class="coin-btn dieci" data-value="0.1">
+      <div class="coin-slot"> <!-- 0.1 -->
+        <button class="addCoin-btn ten" data-value="0.1">
           <h2>0.1</h2>
-          <span class="material-symbols-outlined euro-icon">euro</span>
+          <span class="material-symbols-outlined euro">euro</span>
         </button>
-        <div class="remove-div">
-          <button class="remove-btn" data-value="0.1"><span class="material-symbols-outlined remove-icon">remove</span></button>
-        </div>
+        <button class="removeCoin-btn" data-value="0.1">
+          <span class="material-symbols-outlined delete-sweep">delete_sweep</span>
+        </button>
       </div>
-      <div class="coin">
-        <button class="coin-btn cinque" data-value="0.05">
+      <div class="coin-slot"> <!-- 0.05 -->
+        <button class="addCoin-btn five" data-value="0.05">
           <h2>0.05</h2>
-          <span class="material-symbols-outlined euro-icon">euro</span>
+          <span class="material-symbols-outlined euro">euro</span>
         </button>
-        <div class="remove-div">
-          <button class="remove-btn" data-value="0.05"><span class="material-symbols-outlined remove-icon">remove</span></button>
-        </div>
+        <button class="removeCoin-btn" data-value="0.05">
+          <span class="material-symbols-outlined delete-sweep">delete_sweep</span>
+        </button>
       </div>
-      <div class="coin">
-        <button class="coin-btn due" data-value="0.02">
+      <div class="coin-slot"> <!-- 0.02 -->
+        <button class="addCoin-btn two" data-value="0.02">
           <h2>0.02</h2>
-          <span class="material-symbols-outlined euro-icon">euro</span>
+          <span class="material-symbols-outlined euro">euro</span>
         </button>
-        <div class="remove-div">
-          <button class="remove-btn" data-value="0.02"><span class="material-symbols-outlined remove-icon">remove</span></button>
-        </div>
+        <button class="removeCoin-btn" data-value="0.02">
+          <span class="material-symbols-outlined delete-sweep">delete_sweep</span>
+        </button>
       </div>
-      <div class="coin">
-        <button class="coin-btn uno" data-value="0.01">
+      <div class="coin-slot"> <!-- 0.01 -->
+        <button class="addCoin-btn one" data-value="0.01">
           <h2>0.01</h2>
-          <span class="material-symbols-outlined euro-icon">euro</span>
+          <span class="material-symbols-outlined euro">euro</span>
         </button>
-        <div class="remove-div">
-          <button class="remove-btn" data-value="0.01"><span class="material-symbols-outlined remove-icon">remove</span></button>
-        </div>
+        <button class="removeCoin-btn" data-value="0.01">
+          <span class="material-symbols-outlined delete-sweep">delete_sweep</span>
+        </button>
       </div>
-
     </main>
 
     <footer>
-
-      <div class="total-amount">
+      <button id="resetTotal-btn">
+        <span class="material-symbols-outlined settings-backup-restore">settings_backup_restore</span>
+      </button>
+      <div class="total-section">
         <h2 id="total"></h2>
-        <span class="material-symbols-outlined">euro</span>
+        <span class="material-symbols-outlined euro">euro</span>
       </div>
-
+      <button id="showTotal-btn">
+        <span class="material-symbols-outlined" id="visibility">visibility</span>
+        <span class="material-symbols-outlined" id="visibility-off">visibility_off</span>
+      </button>
+      <button id="themeSwitch-btn">
+        <span class="material-symbols-outlined" id="moon-stars">moon_stars</span>
+        <span class="material-symbols-outlined" id="wb-twilight">wb_twilight</span>
+      </button>
     </footer>
 
-    <!-- links to javascript -->
-    <script src="script.js"></script> <!-- general -->
+    <script src="script.js" defer></script> <!-- all -->
   </body>
 </html>
